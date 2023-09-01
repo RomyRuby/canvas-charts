@@ -19,9 +19,9 @@ class MyCharts {
         pointColor: "#41627c",
       },
       data: [],
-      x: 80,
+      x: 40,
       padding: 20,
-      fontSize: "16px",
+      fontSize: "14px",
       wd: this.containerWidth * this.defaultParam.ratio,
       ht: this.containerHeight * this.defaultParam.ratio,
       lineWidth: 2,
@@ -54,7 +54,7 @@ class MyCharts {
     this.defaultParam.wid = this._canvas.width - 20;
 
     // 设置缩放比
-    this.defaultParam.maxPoint = utils.maxData(this.defaultParam.data) / 0.8;
+    this.defaultParam.maxPoint = utils.maxData(this.defaultParam.data) / 0.7;
 
     this.init();
   }
@@ -65,7 +65,7 @@ class MyCharts {
         let circleConfig = {
           x: this.defaultParam.wd / 2,
           y: this.defaultParam.ht / 2,
-          radius: 200,
+          radius: this.defaultParam.wd / 8,
           startAngle: 0,
           endAngle: 2 * Math.PI,
           arcWidth: 18,

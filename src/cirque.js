@@ -2,7 +2,7 @@ let Cirque = function (percent) {
   //this是调用Cirque时传入的实例
   const ctx = this.ctx;
   let circleConfig = this.defaultParam;
-
+  circleConfig.fontSize = circleConfig.radius / 2 + "px";
   // 绘制打底圆环
   ctx.beginPath();
   ctx.lineWidth = circleConfig.arcWidth;

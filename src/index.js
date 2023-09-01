@@ -6,7 +6,6 @@ new MyCharts({
   select: "#box1",
   ratio: 1.5,
   type: "cirque",
-  fontSize: "100px",
 });
 
 //折线图

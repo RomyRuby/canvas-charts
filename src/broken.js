@@ -71,7 +71,7 @@ export function drawPoint(speed) {
     ctx.fillStyle = "#333";
     ctx.textAlign = "center";
     ctx.font = defaultParam.fontSize + " MicroSoft YaHei";
-    ctx.fillText(yVal, tranX, tranY - 15);
+    ctx.fillText(yVal, tranX, tranY - 10);
     ctx.closePath();
   }
   ctx.restore();
